@@ -21,7 +21,7 @@ If you want use a TP-Link wireless adapter or update your wireless dirver:
 	sudo dkms add ./rtl8192eu-linux-driver
 	sudo dkms install rtl8192eu/1.0
 
-If you do not have an internet connection, [driver link](https://github.com/Mange/rtl8192eu-linux-driver/archive/master.zip) download and extract. Then run
+If you do not have an internet connection, [download](https://github.com/Mange/rtl8192eu-linux-driver/archive/master.zip) and extract. Then run
 
 	cd Desktop
 	sudo dkms add ./rtl8192eu-linux-driver
