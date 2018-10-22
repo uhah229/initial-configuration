@@ -44,6 +44,3 @@ Now enable the driver that we have installed in /etc/modules.
 
 Reboot your machine and check drivers again with lshw -c network.
 
-
-## Github link
-[Github link](http://github.com/uhah229)
