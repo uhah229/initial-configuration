@@ -1,6 +1,6 @@
 # Initial configuration
 ## Getting your Nvidia card to work
-Tested for GTX 1080 on Ubuntu 18.04. This section is for people who hangs on boot with an nvidia card.
+Tested with GTX 1080 on Ubuntu 18.04. This section is for people who hangs on boot with an nvidia card.
 
 	sudo apt install linux-headers-$(uname -r)
 
@@ -16,7 +16,7 @@ Run `sudo update-grub2` and reinstall nvidia drivers
 Where xxx is the nvidia version you want to install.
 
 ## Kde screen tearing
-Tested for Kubuntu 18.04. Save the following file as /etc/profile.d/kwin.sh
+Tested with Kubuntu 18.04. Save the following file as /etc/profile.d/kwin.sh
 
 	export __GL_YIELD="USLEEP"
 
