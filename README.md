@@ -45,7 +45,7 @@ Finish up with
 	cd Desktop/rtl8192eu-linux-driver
 	make clean
 
-If your machine came with a default driver (i.e. your dongle works without any driver installs), you want to first blacklist the old driver. First, check which driver is being used (lshw -c network). The driver name should be rtl8xxxu. Go to /etc/modprobe.d and create file rtl8xxxu-blacklist.conf
+If your machine came with a default driver (i.e. your dongle works without any driver installs), you want to first blacklist the old driver. First, check which driver is being used (`lshw -c network`). The driver name should be rtl8xxxu. Go to /etc/modprobe.d and create file rtl8xxxu-blacklist.conf
 	
 	# Do not load the 'rtl8xxxu' module on boot.
 	blacklist rtl8xxxu
@@ -62,4 +62,4 @@ Want to remove that ugly highlighted directory while using 'ls' ? Put this in yo
 
 	LS_COLORS=$LS_COLORS:'ow=1;34:tw=1;34:' ; export LS_COLORS #Remove ugly background color from permissions using ls
 
-then "source ~/.bashrc" or restart terminal.
+then `source ~/.bashrc` or restart terminal.
