@@ -1,11 +1,26 @@
 # Initial configuration
+## Getting your Nvidia card to work
+Tested for GTX 1080 on Ubuntu 18.04. This section is for people who hangs on boot with an nvidia card.
+
+	sudo apt install linux-headers-$(uname -r)
+
+then set kernel parameters at `/etc/default/grub`
+
+	GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nvidia-drm.modeset=1"
+
+Run `sudo update-grub2` and reinstall nvidia drivers
+
+	sudo apt remove --purge nvidia-xxx
+	sudo apt install nvidia-xxx
+
+Where xxx is the nvidia version you want to install.
 
 ## Kde screen tearing
 Tested for Kubuntu 18.04. Save the following file as /etc/profile.d/kwin.sh
 
 	export __GL_YIELD="USLEEP"
 
-You also want to set kernel parameters at /etc/default/grub (this applies for nvidia users)
+You also want to set kernel parameters at `/etc/default/grub` (this applies for nvidia users)
 
 	GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nvidia-drm.modeset=1"
 
