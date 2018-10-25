@@ -1,7 +1,5 @@
 # Initial configuration
 
----
-
 ## Kde screen tearing
 Tested for Kubuntu 18.04. Save the following file as /etc/profile.d/kwin.sh
 
