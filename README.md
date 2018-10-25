@@ -13,8 +13,8 @@ You also want to set kernel parameters at /etc/default/grub (this applies for nv
 
 After, sudo update-grub2 then reboot. 
 
-## TP-Link Wireless Adapter
-If you want use a TP-Link wireless adapter or update your wireless dirver:
+## TP-Link Wireless USB Adapter
+If you want use a TP-Link wireless adapter or update your wireless driver:
 
 	sudo apt-get install build-essential linux-headers-generic dkms git
 	git clone https://github.com/Mange/rtl8192eu-linux-driver.git
