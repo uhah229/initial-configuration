@@ -42,7 +42,7 @@ Now enable the driver that we have installed in /etc/modules.
 
 Reboot your machine and check drivers again with lshw -c network.
 
-## ls highlighted directory removal
+## Remove highlighted directory from 'ls' command
 Want to remove that ugly highlighted directory while using 'ls' ? Put this in your ~/.bashrc
 
 	LS_COLORS=$LS_COLORS:'ow=1;34:tw=1;34:' ; export LS_COLORS #Remove ugly background color from permissions using ls
