@@ -2,7 +2,7 @@
 ## Getting your Nvidia card to work
 Tested with GTX 1080 on Ubuntu 18.04. This section is for people who hangs on boot with an nvidia card.
 First thing to try is to uncomment the line `#WaylandEnable=false` to `WaylandEnable=false` in `/etc/gdm3/custom.conf`. 
-Try rebooting. If it stil  doesn't work, try the next few steps.
+Try rebooting. If it still  doesn't work, try the next few steps.
 
 	sudo apt install linux-headers-$(uname -r)
 
